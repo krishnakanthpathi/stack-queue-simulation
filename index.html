@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack and Queue Simulation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .visual {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1>Stack and Queue Simulation</h1>
+    
+    <!-- Input and Control Buttons -->
+    <div class="form-inline justify-content-center">
+        <input type="number" id="inputValue" class="form-control mx-2" placeholder="Enter a value">
+        
+        <button class="btn btn-primary mx-2" onclick="push()">Push (Stack)</button>
+        <button class="btn btn-danger mx-2" onclick="pop()">Pop (Stack)</button>
+        
+        <button class="btn btn-primary mx-2" onclick="enqueue()">Enqueue (Queue)</button>
+        <button class="btn btn-danger mx-2" onclick="dequeue()">Dequeue (Queue)</button>
+    </div>
+    
+    <!-- Visualization Area for Stack and Queue -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h3>Stack</h3>
+            <div id="stackContainer" class="visual"></div>
+        </div>
+        <div class="col-md-6">
+            <h3>Queue</h3>
+            <div id="queueContainer" class="visual"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
